@@ -7,7 +7,7 @@ Each folder contains a focused lab exploring real-world techniques for breaking 
 
 ## Labs Overview
 
-- **[Lab 1: Crack SHA-512 Password Hash (zuko:123456)](lab1/README.md)**  
+- **[Lab 1: Crack SHA-512 Password Hash (zuko:123456)](lab1/README-lab1.md)**  
   Generate and crack a SHA-512 password hash using `openssl` and `john`.
 
 - **Lab 2: Coming Soon**  
