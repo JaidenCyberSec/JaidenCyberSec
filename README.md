@@ -39,7 +39,7 @@ Welcome! This is my hands-on cybersecurity portfolio, built through intensive pr
 ---
 
 ## Featured Projects
- [Linux Fundamentals Labs](./Linux-Fundamentals)
+- [Linux Fundamentals Labs](./Linux-Fundamentals)
 - [Privilege Escalation Practice](./Privilege-Escalation)
 - [John The Ripper Labs](./JohnTheRipper-Labs) 
 
