@@ -39,10 +39,9 @@ Welcome! This is my hands-on cybersecurity portfolio, built through intensive pr
 ---
 
 ## Featured Projects
-- [Linux Fundamentals Labs](./Linux-Fundamentals)  
-- [Privilege Escalation Practice](./Privilege-Escalation)  
-- [TryHackMe Writeups](./TryHackMe-Writeups)  
-- [Custom Bash Scripts](./Scripts)  
+ [Linux Fundamentals Labs](./Linux-Fundamentals)
+- [Privilege Escalation Practice](./Privilege-Escalation)
+- [John The Ripper Labs](./JohnTheRipper-Labs) 
 
 Each folder includes:
 - Lab objectives  
