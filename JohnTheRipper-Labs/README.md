@@ -1,21 +1,41 @@
-## Walkthrough Overview
+# John the Ripper Lab Series
 
-These labs simulate real-world password cracking scenarios using John the Ripper.  
-Each walkthrough breaks down the process step-by-step:
-
-### Lab 1: Crack SHA-512 Password (zuko:123456)
-- Created SHA-512 hash using `openssl passwd -6`
-- Saved it to `test_passwd.txt`
-- Ran John the Ripper with default wordlist to crack the password
-- Verified cracked credentials with `john --show`
-
-> Outcome: Successfully cracked the hash and revealed password `123456` for user `zuko`
+Welcome to my hands-on password cracking series using **John the Ripper** and **Kali Linux**.  
+Each folder contains a focused lab exploring real-world techniques for breaking hashed passwords.
 
 ---
 
-### Lab 2: Coming Soon
-- (Planned) Cracking an MD5 hash using a custom hash file and dictionary attack
+## Labs Overview
+
+- **[Lab 1: Crack SHA-512 Password Hash (zuko:123456)](./lab1/README.md)**  
+  Generate and crack a SHA-512 password hash using `openssl` and `john`.
+
+- **Lab 2: Coming Soon**  
+  (Crack MD5 hash using custom wordlist)
 
 ---
 
-Each walkthrough includes commands, example files, and optional screenshots for clarity.
+## Tools Used Across Labs
+
+- Kali Linux  
+- John the Ripper  
+- OpenSSL  
+- rockyou.txt / custom wordlists  
+
+---
+
+## Structure
+
+Each lab includes:
+- Commands used  
+- Sample hash files  
+- Screenshots (if available)  
+- Lessons learned
+
+---
+
+## Stay Connected
+
+- **TryHackMe**: [Jaiden.Jimerson](https://tryhackme.com/p/Jaiden.Jimerson)  
+- **LinkedIn**: [Jaiden Jimerson](https://www.linkedin.com/in/jaiden-jimerson-319995140)  
+- **X (Twitter)**: [@JaidenCyberSec](https://x.com/JaidenCyberSec)
