@@ -10,7 +10,7 @@ These labs demonstrate real-world techniques for cracking hashed passwords and e
 ### 1. [Lab 1: Crack SHA-512 Password Hash](./lab1/README.md)  
 In this lab, you will learn how to generate and crack a **SHA-512** password hash using **openssl** and **John the Ripper**.
 
-### 2. [Lab 2: Crack an Encrypted ZIP File Using John the Ripper](./labs2/README.md)
+### 2. **[Lab 2: Crack Encrypted ZIP File](./lab2/README.md)**
 In this lab, you'll learn how to crack the password of a **ZIP file** that has been encrypted using **John the Ripper**.
 
 ### 3. [Lab 3: Coming Soon](./lab3/README.md)  
