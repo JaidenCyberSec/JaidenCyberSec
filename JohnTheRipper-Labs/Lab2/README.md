@@ -1,5 +1,5 @@
 ```markdown
-# Lab 2: Cracking a Password-Protected ZIP File with John the Ripper
+### Lab 2: Cracking a Password-Protected ZIP File with John the Ripper
 
 In this lab, I successfully cracked an encrypted `.zip` file using **John the Ripper** and revealed a hidden message.
 
