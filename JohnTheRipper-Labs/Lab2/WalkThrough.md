@@ -1,6 +1,3 @@
----
-
-```markdown
 # Lab 2 Walkthrough: Cracking a Password-Protected ZIP File
 
 In this lab, I simulated a real-world password cracking scenario using a ZIP archive and John the Ripper.
@@ -21,6 +18,7 @@ I started by writing a message to a file using:
 
 ```bash
 echo "This is a secret message." > secret.txt
+
 ```
 
 2. **Encrypted the File in a ZIP**
