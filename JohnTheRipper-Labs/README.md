@@ -1,26 +1,26 @@
-# 🧠 John the Ripper Lab Series
+# 🧠 **John the Ripper Lab Series**
 
-Welcome to my **John the Ripper** lab series.  
-These labs simulate real-world password cracking techniques using **Kali Linux**, **John the Ripper**, and essential tools used in offensive security.
+Welcome to my **John the Ripper** lab series!  
+In this series, we’ll dive into **password cracking** techniques that simulate real-world security challenges. Each lab walks through hands-on examples using **Kali Linux**, **John the Ripper**, and other critical offensive security tools.
 
-Each lab walks through hands-on examples, showing how ethical hackers might recover passwords from hashed or encrypted data.
-
----
-
-## 📂 Labs Overview
-
-### 🔐 [Lab 1: Crack SHA-512 Password Hash](./Lab1/README-lab1.md)  
-Learn how to simulate post-exploitation on a Linux system by cracking a **SHA-512** password hash using `openssl`, `unshadow`, and **John the Ripper**.
-
-### 🗜️ [Lab 2: Crack Encrypted ZIP File](./Lab2/README.md)  
-Crack the password of a **ZIP file** encrypted with `zip -e` using `zip2john` + **John the Ripper** with the `rockyou.txt` wordlist.
-
-### 🧪 [Lab 3: Custom User Shadow Attack - Kuzan](./Lab3/README.md)  
-Crack a SHA-512 hash for a fake Linux user named **kuzan** using a custom lab setup. This simulates how an attacker would retrieve and crack hashes from `/etc/passwd` and `/etc/shadow`.
+Through these labs, you’ll learn how to break encrypted or hashed data, simulating real-world attacks to recover passwords.
 
 ---
 
-## 🛠️ Tools Used
+## 📂 **Labs Overview**
+
+### 🔐 **[Lab 1: Crack SHA-512 Password Hash](./Lab1/README-lab1.md)**  
+In this lab, you’ll simulate post-exploitation of a Linux system, cracking a **SHA-512** password hash using tools like `openssl`, `unshadow`, and **John the Ripper**.
+
+### 🗜️ **[Lab 2: Crack Encrypted ZIP File](./Lab2/README.md)**  
+Learn to crack the password of a **ZIP file** encrypted with `zip -e`. You’ll use `zip2john` to extract the hash and **John the Ripper** to crack it with the popular `rockyou.txt` wordlist.
+
+### 🧪 **[Lab 3: Custom User Shadow Attack - Kuzan](./Lab3/README.md)**  
+Simulate an attack on a fake Linux user named **kuzan**. You’ll retrieve and crack SHA-512 hashes from `/etc/passwd` and `/etc/shadow` to gain access.
+
+---
+
+## 🛠️ **Tools Used**
 
 - **Kali Linux**
 - **John the Ripper**
@@ -32,26 +32,25 @@ Crack a SHA-512 hash for a fake Linux user named **kuzan** using a custom lab se
 
 ---
 
-## 🧪 Lab Structure
+## 🧪 **Lab Structure**
 
-Each lab includes:
-- 🔍 Step-by-step walkthroughs  
-- 📄 Commands and file examples  
-- 📸 Screenshots (where helpful)  
-- 🧠 Lessons learned + next steps
+Each lab in this series includes:
+- 🔍 **Step-by-step walkthroughs**  
+- 📄 **Command and file examples**  
+- 📸 **Screenshots** (where needed)  
+- 🧠 **Key lessons learned** and recommendations for next steps
 
-All labs are beginner-friendly but build real-world offensive security skills over time.
-
----
-
-## 💡 Why This Series?
-
-I’m committed to mastering tools used in real red-team/blue-team workflows.  
-These labs are part of my daily grind to level up in cybersecurity and share what I learn as I go 💻🔥
+These labs are beginner-friendly but packed with real-world, hands-on security skills that you can use for offensive and defensive work.
 
 ---
 
-## 🌐 Connect With Me
+## 💡 **Why This Series?**
+
+I’m deeply committed to mastering tools that are crucial for both **red team** and **blue team** operations. These labs are my way of sharpening my skills in cybersecurity and sharing the knowledge I gain with others along the way. 💻🔥
+
+---
+
+## 🌐 **Connect With Me**
 
 - 🧑‍💻 **LinkedIn**: [Jaiden Jimerson](https://www.linkedin.com/in/jaiden-jimerson-319995140)  
 - 🐦 **X (Twitter)**: [@JaidenCyberSec](https://x.com/JaidenCyberSec)  
@@ -60,3 +59,11 @@ These labs are part of my daily grind to level up in cybersecurity and share wha
 ---
 
 > “Train like you already have the job.”
+
+---
+
+## 📜 **Copyright**
+
+© 2025 Jaiden Jimerson. All rights reserved.  
+This series and the content within it are for educational purposes only. Unauthorized use or reproduction of any materials in this series is prohibited without prior permission.
+
