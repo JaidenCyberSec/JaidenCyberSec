@@ -1,7 +1,3 @@
-
----
-
-```markdown
 # John the Ripper: Linux Password Cracking Lab
 
 This lab simulates a post-exploitation scenario where an attacker extracts password hashes from a Linux system and uses John the Ripper to crack them. It’s a hands-on exercise in password security, ideal for learners in cybersecurity and ethical hacking.
@@ -31,6 +27,7 @@ This lab simulates a post-exploitation scenario where an attacker extracts passw
 
 ```bash
 mkdir john-shadow-lab && cd john-shadow-lab
+
 ```
 
 ---
@@ -124,4 +121,3 @@ This lab is for **educational purposes only**. Do not use these techniques on re
 
 ---
 
-Let me know if you want help building out the GitHub repo to include all your labs in one place with a clean structure and professional readme templates!
