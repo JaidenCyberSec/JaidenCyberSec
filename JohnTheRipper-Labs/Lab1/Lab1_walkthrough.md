@@ -67,7 +67,7 @@ Crack a SHA-512 hashed password that was manually saved into `test_passwd.txt`.
 ---
 
 ## 📸 Screenshot  
-![Cracked zuko's SHA-512 hash](./Lab1/John-zuko-crack.png)
+![Cracked zuko's SHA-512 hash](./John-zuko-crack.png)
 
 ---
 
