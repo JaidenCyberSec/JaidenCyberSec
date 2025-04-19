@@ -1,97 +1,47 @@
-# 🔐 Lab 2 Walkthrough: Cracking a Password-Protected ZIP File  
+# 🧠 Walkthrough Overview  
 📜 **Author**: Jaiden Jimerson  
 ©️ 2025 Jaiden Jimerson. All rights reserved.
 
-In this lab, I simulated a real-world password cracking scenario using a ZIP archive and **John the Ripper**.
+These labs simulate real-world password cracking scenarios using **John the Ripper**.  
+Each walkthrough breaks down the process step-by-step, helping you understand how password security can be broken when poor practices are used.
 
 ---
 
-## 🎯 Objective
+### ✅ Lab 1: Crack SHA-512 Password (zuko:123456)
 
-Crack the password of a `.zip` file and retrieve its contents using **John the Ripper** and the **RockYou** wordlist.
+- Created SHA-512 hash using `openssl passwd -6`
+- Saved it to `test_passwd.txt`
+- Ran John the Ripper with default wordlist to crack the password
+- Verified cracked credentials with `john --show`
 
----
-
-## 🧪 Walkthrough
-
-### 1. ✍️ Created a Secret File
-
-```bash
-echo "This is a secret message." > secret.txt
-```
-
-Wrote a secret message to a file.
+> 🔓 **Outcome**: Successfully cracked the hash and revealed password `123456` for user `zuko`
 
 ---
 
-### 2. 🔐 Encrypted the File into a ZIP
+### ✅ Lab 2: Crack Password-Protected ZIP File
 
-```bash
-zip -e secret.zip secret.txt
-```
+- Created a file `secret.txt` with hidden content
+- Encrypted the file with `zip -e secret.zip secret.txt`
+- Used `zip2john` to extract a hash and fed it to John the Ripper
+- Cracked the password using the `rockyou.txt` wordlist
+- Verified and unzipped the file with the recovered password
 
-Password-protected the file using ZIP encryption.
-
----
-
-### 3. 🧬 Extracted the ZIP Hash
-
-```bash
-zip2john secret.zip > zip_hash.txt
-```
-
-Converted the ZIP file into a format John the Ripper can crack.
+> 🔓 **Outcome**: Password cracked and hidden message revealed from the ZIP
 
 ---
 
-### 4. 🧠 Cracked the Password with John
+### ✅ Lab 3: Crack SHA-512 Hash for Custom User (kuzan:anime)
 
-```bash
-john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
-```
+- Created fake `passwd` and `shadow` files for user `kuzan`
+- Generated a SHA-512 password hash using `openssl passwd -6 anime`
+- Used `unshadow` to merge files into a John-readable format
+- Ran John with the `rockyou.txt` wordlist
+- Verified successful cracking using `john --show`
 
-Used a dictionary attack to reveal the password. ✅ Success!
-
----
-
-### 5. 🔓 Revealed the Cracked Password
-
-```bash
-john --show zip_hash.txt
-```
-
-Displayed the cracked password for verification.
+> 🔓 **Outcome**: Cracked password for user `kuzan` — the password was `anime`
 
 ---
 
-### 6. 📂 Unzipped the File with the Cracked Password
+Each walkthrough is beginner-friendly and designed to reinforce ethical hacking fundamentals and password auditing techniques.  
 
-```bash
-unzip secret.zip
-```
-
-Successfully extracted `secret.txt` using the cracked password.
-
----
-
-### 7. 🕵️ Read the Hidden Message
-
-```bash
-cat secret.txt
-```
-
-Final output:
-> _"This is a secret message."_
-
----
-
-## 📝 Summary
-
-This lab demonstrated a complete cracking workflow:
-
-- 🔐 Encrypting a file  
-- 🧬 Extracting a hash  
-- 🧠 Cracking the password  
-- 🗝️ Accessing the hidden content  
-
-It reinforced how attackers use weak passwords to their advantage and showcased the power of **John the Ripper** in real-world password auditing.
+More labs coming soon! 🧪
