@@ -142,3 +142,12 @@ kuzan:anime
 
 This lab is for **educational purposes only**.  
 🛑 Never attempt unauthorized access or password cracking on live systems. Always get **explicit permission**.
+
+---
+
+## 📜 Copyright
+
+© 2025 Jaiden Jimerson. All rights reserved.  
+This lab and all related materials are provided for educational use only. No part may be reproduced or reused without explicit written permission.
+
+
