@@ -1,48 +1,62 @@
-# John the Ripper Lab Series
+# 🧠 John the Ripper Lab Series
 
-Welcome to my **John the Ripper** lab series!  
-These labs demonstrate real-world techniques for cracking hashed passwords and encrypted files using **John the Ripper** and **Kali Linux**.
+Welcome to my **John the Ripper** lab series.  
+These labs simulate real-world password cracking techniques using **Kali Linux**, **John the Ripper**, and essential tools used in offensive security.
 
----
-
-## Labs Overview
-
-### 1. [Lab 1: Crack SHA-512 Password Hash](./lab1/README.md)  
-In this lab, you will learn how to generate and crack a **SHA-512** password hash using **openssl** and **John the Ripper**.
-
-### 2. [Lab 2: Crack Encrypted ZIP File](./lab2/README.md)
-In this lab, you'll learn how to crack the password of a **ZIP file** that has been encrypted using **John the Ripper**.
-
-### 3. [Lab 3: Coming Soon](./lab3/README.md)  
-Description and steps for Lab 3 (to be added soon).
+Each lab walks through hands-on examples, showing how ethical hackers might recover passwords from hashed or encrypted data.
 
 ---
 
-## Tools Used Across Labs
+## 📂 Labs Overview
 
-- **Kali Linux**  
-- **John the Ripper**  
-- **OpenSSL**  
-- **rockyou.txt / custom wordlists**  
-- **zip2john**  
+### 🔐 [Lab 1: Crack SHA-512 Password Hash](./lab1/README.md)  
+Learn how to simulate post-exploitation on a Linux system by cracking a **SHA-512** password hash using `openssl`, `unshadow`, and **John the Ripper**.
+
+### 🗜️ [Lab 2: Crack Encrypted ZIP File](./lab2/README.md)  
+Crack the password of a **ZIP file** encrypted with `zip -e` using `zip2john` + **John the Ripper** with the `rockyou.txt` wordlist.
+
+### 🧪 [Lab 3: Custom User Shadow Attack - Kuzan](./lab3/README.md)  
+Crack a SHA-512 hash for a fake Linux user named **kuzan** using a custom lab setup. This simulates how an attacker would retrieve and crack hashes from `/etc/passwd` and `/etc/shadow`.
+
+---
+
+## 🛠️ Tools Used
+
+- **Kali Linux**
+- **John the Ripper**
+- **OpenSSL**
+- **zip2john**
+- **rockyou.txt** (wordlist)
+- **unshadow**
 - **unzip**
 
 ---
 
-## Lab Structure
+## 🧪 Lab Structure
 
 Each lab includes:
-- **Commands used**  
-- **Sample hash files or encrypted files**  
-- **Screenshots** (if applicable)  
-- **Lessons learned**  
+- 🔍 Step-by-step walkthroughs  
+- 📄 Commands and file examples  
+- 📸 Screenshots (where helpful)  
+- 🧠 Lessons learned + next steps
 
-Feel free to explore each lab, practice the techniques, and dive into the exciting world of **ethical hacking** and **password cracking**!
+All labs are beginner-friendly but build real-world offensive security skills over time.
 
 ---
 
-## Stay Connected
+## 💡 Why This Series?
 
-- **LinkedIn**: [Jaiden Jimerson](https://www.linkedin.com/in/jaiden-jimerson-319995140)  
-- **X (Twitter)**: [@JaidenCyberSec](https://x.com/JaidenCyberSec)  
-- **TryHackMe**: [Jaiden.Jimerson](https://tryhackme.com/p/Jaiden.Jimerson)
+I’m committed to mastering tools used in real red-team/blue-team workflows.  
+These labs are part of my daily grind to level up in cybersecurity and share what I learn as I go 💻🔥
+
+---
+
+## 🌐 Connect With Me
+
+- 🧑‍💻 **LinkedIn**: [Jaiden Jimerson](https://www.linkedin.com/in/jaiden-jimerson-319995140)  
+- 🐦 **X (Twitter)**: [@JaidenCyberSec](https://x.com/JaidenCyberSec)  
+- 🧩 **TryHackMe**: [Jaiden.Jimerson](https://tryhackme.com/p/Jaiden.Jimerson)
+
+---
+
+> “Train like you already have the job.”
