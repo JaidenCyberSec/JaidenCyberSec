@@ -1,90 +1,111 @@
-# John the Ripper: Linux Password Cracking Lab
+# 🧨 John the Ripper: Linux Password Cracking Lab
 
-This lab simulates a post-exploitation scenario where an attacker extracts password hashes from a Linux system and uses John the Ripper to crack them. It’s a hands-on exercise in password security, ideal for learners in cybersecurity and ethical hacking.
+🎯 **Simulated Post-Exploitation Scenario**  
+You’ve gained root-level access on a Linux box and exfiltrated the `/etc/passwd` and `/etc/shadow` files. Now it’s time to crack some hashes using **John the Ripper**.
 
----
-
-## Objectives
-
-- Understand how Linux authentication works
-- Practice extracting and cracking password hashes
-- Use John the Ripper effectively with real wordlists
+This lab is perfect for anyone learning ethical hacking, red teaming, or how password security can be broken if mismanaged.
 
 ---
 
-## Tools Used
+## 🎓 Objectives
 
-- `John the Ripper`
-- `openssl`
-- `unshadow`
-- `rockyou.txt` wordlist
+- 🧠 Understand how Linux stores and manages passwords  
+- 🛠️ Simulate realistic password hashes  
+- 🔓 Crack a SHA-512 hash using John and a real wordlist
 
 ---
 
-## Lab Steps
+## 🧰 Tools Used
 
-### 1. Setup Your Lab Directory
+- `John the Ripper` 🔐  
+- `openssl` 🔑  
+- `unshadow` 🪞  
+- `rockyou.txt` wordlist 📖  
+
+> 💡 Make sure `john` and `rockyou.txt` are installed. On Kali Linux, rockyou is usually at:  
+> `/usr/share/wordlists/rockyou.txt.gz` — decompress it with `gunzip`.
+
+---
+
+## 🧪 Lab Steps
+
+---
+
+### ✅ Step 1: Set Up Your Lab Directory
 
 ```bash
 mkdir john-shadow-lab && cd john-shadow-lab
-
 ```
+
+Organize your test files into a dedicated folder.
 
 ---
 
-### 2. Create a Fake /etc/passwd Entry
+### 👤 Step 2: Create a Fake `/etc/passwd` Entry
 
 ```bash
 echo 'kuzan:x:1001:1001:Kuzan:/home/kuzan:/bin/bash' > passwd.txt
 ```
 
-This entry represents a normal Linux user. The "x" means the password is stored in the shadow file.
+This represents a standard Linux user named **kuzan**.
 
 ---
 
-### 3. Generate a Hashed Password
+### 🔐 Step 3: Generate a Hashed Password
+
+Let’s hash the password **anime** using SHA-512:
 
 ```bash
 openssl passwd -6 anime
 ```
 
-Copy the resulting SHA-512 hash.
+📋 Copy the full output — you’ll use it in the next step.
 
----
+Example:
 
-### 4. Create the Matching /etc/shadow Entry
-
-Replace `<your_hash>` with the one you copied:
-
-```bash
-echo 'kuzan:<your_hash>:19000:0:99999:7:::' > shadow.txt
+```
+$6$Z12vX9pN$72XILsGb...lVYu/.R/
 ```
 
-This creates a realistic shadow file entry.
+---
+
+### 🕶️ Step 4: Create a Matching `/etc/shadow` Entry
+
+Insert the hash you copied:
+
+```bash
+echo 'kuzan:$6$Z12vX9pN$72XILsGb...lVYu/.R/:19000:0:99999:7:::' > shadow.txt
+```
+
+📝 `19000` = days since epoch when the password was last changed.
 
 ---
 
-### 5. Merge passwd and shadow
+### 🛠️ Step 5: Merge `passwd` and `shadow`
+
+John the Ripper needs a single file with both username and hash:
 
 ```bash
 unshadow passwd.txt shadow.txt > unshadowed.txt
 ```
 
-This creates a combined file that John can work with.
+✅ This creates a hybrid file John can read.
 
 ---
 
-### 6. Crack the Password
+### 🔓 Step 6: Crack the Password
+
+Use the famous `rockyou.txt` wordlist:
 
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt unshadowed.txt
 ```
 
-John will try each word in the list until it finds a match for the hash.
+John begins attempting guesses. If **anime** is in the wordlist, it’ll find it.
 
 ---
 
-### 7. Show the Cracked Password
+### 📢 Step 7: Reveal the Cracked Password
 
 ```bash
 john --show unshadowed.txt
@@ -96,25 +117,28 @@ Expected output:
 kuzan:anime
 ```
 
----
-
-## What You Practiced
-
-- How Linux stores usernames and passwords
-- Creating and understanding hashed passwords (SHA-512)
-- Combining and cracking hashes with John the Ripper
-- Safe password cracking in a lab environment
+🔥 Boom — password cracked!
 
 ---
 
-## Author
+## 🧠 What You Practiced
+
+- Linux password architecture: `/etc/passwd` & `/etc/shadow`  
+- How SHA-512 password hashes are created  
+- Using `unshadow` to prep for cracking  
+- Safe, ethical password cracking in a sandbox
+
+---
+
+## 👨‍💻 About the Author
 
 **Jaiden** — Cybersecurity & Ethical Hacking Student  
-[X (Twitter)](https://twitter.com/JaidenCyberSec) | [LinkedIn](https://linkedin.com/in/jaiden)
+🐦 [Twitter/X: @JaidenCyberSec](https://twitter.com/JaidenCyberSec)  
+💼 [LinkedIn](https://linkedin.com/in/jaiden)
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-This lab is for **educational purposes only**. Do not use these techniques on real systems without permission.
-
+This lab is for **educational purposes only**.  
+🛑 Never attempt unauthorized access or password cracking on live systems. Always get **explicit permission**.
