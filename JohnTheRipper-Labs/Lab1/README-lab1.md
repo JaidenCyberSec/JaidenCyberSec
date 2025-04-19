@@ -58,5 +58,5 @@ This folder contains my hands-on labs using **John the Ripper** to crack SHA-512
 ---
 
 ## 📷 Screenshot  
-![Cracked zuko's SHA-512 hash](./JohnTheRipper-Labs/Lab1/John-zuko-crack.png)
+![Cracked zuko's SHA-512 hash](./John-zuko-crack.png)
 
