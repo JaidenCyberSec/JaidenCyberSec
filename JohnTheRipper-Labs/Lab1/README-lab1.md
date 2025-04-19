@@ -1,40 +1,65 @@
-# John the Ripper Labs
- 
- This folder contains my hands-on labs using John the Ripper to crack SHA-512 password hashes. The lab demonstrates cracking a password hash for the user `zuko` from `test_passwd.txt`.
- 
- ---
- 
- ## Tools & Technologies Used
- - Kali Linux
- - John the Ripper
- - rockyou.txt wordlist
- 
- ---
- 
- ## Lab Breakdown
- 
- 1. **Lab: Cracking a SHA-512 Password Hash**
-    - **Objective**: Crack a SHA-512 password hash saved in `test_passwd.txt`.
-    - **Steps**:
-      1. Generated the SHA-512 hash for `123456` using `openssl`.
-      2. Manually saved the hash in `test_passwd.txt`.
-      3. Cracked the password using John the Ripper with the RockYou wordlist.
-      4. Used `john --show` to display the cracked password.
- 
-    - **Outcome**:
-      - Username: `zuko`
-      - Password: `123456`
- 
-    - [Link to walkthrough.md](./walkthrough.md)
- 
- ---
- 
- ## Notes
- - This lab demonstrates using `openssl` to create SHA-512 password hashes and cracking them using John the Ripper.
- - The `john --show` command is essential for displaying cracked passwords after the cracking process.
- - Screenshots from the lab are included in the screenshots folder.
- 
- ---
- 
- ## Screenshot:
- ![Cracked zuko's SHA-512 hash](./JohnTheRipper-Labs/Lab1/John-zuko-crack.png)
+# 🧠 John the Ripper Labs  
+📜 **Author**: Jaiden Jimerson  
+©️ 2025 Jaiden Jimerson. All rights reserved.
+
+This folder contains my hands-on labs using **John the Ripper** to crack SHA-512 password hashes. This particular lab demonstrates how I cracked a password hash for the user `zuko` from a file named `test_passwd.txt`.
+
+---
+
+## 🛠️ Tools & Technologies Used  
+- 💻 Kali Linux  
+- 🔐 John the Ripper  
+- 📂 rockyou.txt wordlist  
+
+---
+
+## 🧪 Lab Breakdown
+
+### 🔍 **Lab: Cracking a SHA-512 Password Hash**  
+**🎯 Objective**: Crack a SHA-512 password hash stored in `test_passwd.txt`.
+
+#### 📋 Steps:
+
+1. ✅ Generated the SHA-512 hash for `123456` using:
+
+   ```bash
+   openssl passwd -6 123456
+   ```
+
+2. 📝 Manually saved the hash in `test_passwd.txt` under the username `zuko`.
+
+3. 🧠 Used **John the Ripper** with the **RockYou** wordlist to crack the hash:
+
+   ```bash
+   john --wordlist=/usr/share/wordlists/rockyou.txt test_passwd.txt
+   ```
+
+4. 👁️ Displayed the cracked credentials:
+
+   ```bash
+   john --show test_passwd.txt
+   ```
+
+---
+
+### ✅ **Outcome**  
+- 👤 Username: `zuko`  
+- 🔓 Password: `123456`  
+
+📄 [View Full Walkthrough](./walkthrough.md)
+
+---
+
+## 📝 Notes  
+- This lab shows how to generate and crack SHA-512 password hashes using `openssl` and John the Ripper.  
+- The `john --show` command is essential for revealing cracked credentials post-crack.  
+- 📸 Screenshots are included in the `screenshots` folder for reference.
+
+---
+
+## 📷 Screenshot  
+![Cracked zuko's SHA-512 hash](./JohnTheRipper-Labs/Lab1/John-zuko-crack.png)
+
+---
+
+Let me know if you want a LinkedIn post or thread version of this too!
