@@ -46,7 +46,7 @@ This folder contains my hands-on labs using **John the Ripper** to crack SHA-512
 - 👤 Username: `zuko`  
 - 🔓 Password: `123456`  
 
-📄 [View Full Walkthrough](./walkthrough.md)
+📄 [View Full Walkthrough](./Lab1_walkthrough.md)
 
 ---
 
@@ -60,6 +60,3 @@ This folder contains my hands-on labs using **John the Ripper** to crack SHA-512
 ## 📷 Screenshot  
 ![Cracked zuko's SHA-512 hash](./JohnTheRipper-Labs/Lab1/John-zuko-crack.png)
 
----
-
-Let me know if you want a LinkedIn post or thread version of this too!
