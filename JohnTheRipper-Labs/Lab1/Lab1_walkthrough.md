@@ -1,7 +1,3 @@
-Here’s your upgraded **John the Ripper Walkthrough** with emojis, personal author tag, and polished formatting — perfect for showing off your skills in a professional yet engaging way:
-
----
-
 # 🔐 John the Ripper Walkthrough  
 📜 **Author**: Jaiden Jimerson  
 ©️ 2025 Jaiden Jimerson. All rights reserved.
