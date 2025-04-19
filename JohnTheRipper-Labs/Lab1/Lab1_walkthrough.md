@@ -72,7 +72,3 @@ Crack a SHA-512 hashed password that was manually saved into `test_passwd.txt`.
 - 🔑 `openssl passwd -6` creates SHA-512 hashes, the same type found in Linux shadow files.  
 - 🧠 John the Ripper **automatically detects the hash format**, so no need to set it manually.  
 - 👁️ Use `john --show` to view cracked usernames and their passwords post-attack.
-
----
-
-Want this turned into a LinkedIn post next?
