@@ -1,91 +1,97 @@
-# Lab 2 Walkthrough: Cracking a Password-Protected ZIP File
+# 🔐 Lab 2 Walkthrough: Cracking a Password-Protected ZIP File  
+📜 **Author**: Jaiden Jimerson  
+©️ 2025 Jaiden Jimerson. All rights reserved.
 
-In this lab, I simulated a real-world password cracking scenario using a ZIP archive and John the Ripper.
-
----
-
-## Objective
-
-Crack the password of a ZIP file and retrieve its contents using John the Ripper and the RockYou wordlist.
+In this lab, I simulated a real-world password cracking scenario using a ZIP archive and **John the Ripper**.
 
 ---
 
-## Walkthrough
+## 🎯 Objective
 
-1. **Created a Secret File**
+Crack the password of a `.zip` file and retrieve its contents using **John the Ripper** and the **RockYou** wordlist.
 
-I started by writing a message to a file using:
+---
+
+## 🧪 Walkthrough
+
+### 1. ✍️ Created a Secret File
 
 ```bash
 echo "This is a secret message." > secret.txt
-
 ```
 
-2. **Encrypted the File in a ZIP**
+Wrote a secret message to a file.
 
-I zipped the file using password protection:
+---
+
+### 2. 🔐 Encrypted the File into a ZIP
 
 ```bash
 zip -e secret.zip secret.txt
 ```
 
-This prompted me to set a password.
+Password-protected the file using ZIP encryption.
 
-3. **Converted ZIP to Hash**
+---
 
-I used `zip2john` to extract a crackable hash:
+### 3. 🧬 Extracted the ZIP Hash
 
 ```bash
 zip2john secret.zip > zip_hash.txt
 ```
 
-4. **Cracked the Password with John**
+Converted the ZIP file into a format John the Ripper can crack.
 
-I ran John with the RockYou wordlist to find the password:
+---
+
+### 4. 🧠 Cracked the Password with John
 
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
 ```
 
-John successfully cracked the password.
+Used a dictionary attack to reveal the password. ✅ Success!
 
-5. **Displayed the Cracked Password**
+---
 
-To see the cracked credentials:
+### 5. 🔓 Revealed the Cracked Password
 
 ```bash
 john --show zip_hash.txt
 ```
 
-6. **Unzipped the File Using Cracked Password**
+Displayed the cracked password for verification.
 
-Finally, I extracted the contents:
+---
+
+### 6. 📂 Unzipped the File with the Cracked Password
 
 ```bash
 unzip secret.zip
 ```
 
-After entering the cracked password, I accessed the secret message.
+Successfully extracted `secret.txt` using the cracked password.
 
-7. **Viewed the Hidden Message**
+---
+
+### 7. 🕵️ Read the Hidden Message
 
 ```bash
 cat secret.txt
 ```
 
-It revealed: _"This is a secret message."_
+Final output:
+> _"This is a secret message."_
 
 ---
 
-## Summary
+## 📝 Summary
 
-This lab demonstrated the full cycle of:
+This lab demonstrated a complete cracking workflow:
 
-- Creating encrypted data
-- Extracting a hash
-- Using a wordlist to crack it
-- Retrieving the data
+- 🔐 Encrypting a file  
+- 🧬 Extracting a hash  
+- 🧠 Cracking the password  
+- 🗝️ Accessing the hidden content  
 
-It reinforced my understanding of how easily weak passwords can be broken with the right tools.
-
-```
+It reinforced how attackers use weak passwords to their advantage and showcased the power of **John the Ripper** in real-world password auditing.
