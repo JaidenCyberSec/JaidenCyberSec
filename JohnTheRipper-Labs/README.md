@@ -9,7 +9,7 @@ Each lab walks through hands-on examples, showing how ethical hackers might reco
 
 ## 📂 Labs Overview
 
-### 🔐 [Lab 1: Crack SHA-512 Password Hash](./README-lab1.md)  
+### 🔐 [Lab 1: Crack SHA-512 Password Hash](./Lab1/README-lab1.md)  
 Learn how to simulate post-exploitation on a Linux system by cracking a **SHA-512** password hash using `openssl`, `unshadow`, and **John the Ripper**.
 
 ### 🗜️ [Lab 2: Crack Encrypted ZIP File](./README.md)  
