@@ -1,23 +1,24 @@
-# Lab 2: Cracking a Password-Protected ZIP File with John the Ripper
+# 🔐 Lab 2: Cracking a Password-Protected ZIP File with John the Ripper  
+📜 **Author**: Jaiden Jimerson  
+©️ **Copyright** 2025 Jaiden Jimerson. All rights reserved.
 
 In this lab, I successfully cracked an encrypted `.zip` file using **John the Ripper** and revealed a hidden message.
 
 ---
 
-## Steps Performed
+## 🧪 Steps Performed
 
-### 1. Created the Secret File
+### 1. 📄 Created the Secret File
 
 ```bash
 echo "This is a secret message." > secret.txt
-
 ```
 
 **Wrote a hidden message to a file.**
 
 ---
 
-### 2. Encrypted It with a Password-Protected ZIP
+### 2. 🔒 Encrypted It with a Password-Protected ZIP
 
 ```bash
 zip -e secret.zip secret.txt
@@ -27,7 +28,7 @@ zip -e secret.zip secret.txt
 
 ---
 
-### 3. Extracted the Hash from the ZIP
+### 3. 🔍 Extracted the Hash from the ZIP
 
 ```bash
 zip2john secret.zip > zip_hash.txt
@@ -38,7 +39,7 @@ cat zip_hash.txt
 
 ---
 
-### 4. Cracked the Password
+### 4. 💥 Cracked the Password
 
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
@@ -49,7 +50,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
 
 ---
 
-### 5. Revealed the Cracked Password
+### 5. 🧾 Revealed the Cracked Password
 
 ```bash
 john --show zip_hash.txt
@@ -59,7 +60,7 @@ john --show zip_hash.txt
 
 ---
 
-### 6. Unzipped the File Using the Cracked Password
+### 6. 📂 Unzipped the File Using the Cracked Password
 
 ```bash
 unzip secret.zip
@@ -69,7 +70,7 @@ unzip secret.zip
 
 ---
 
-### 7. Read the Secret Message
+### 7. 🕵️‍♂️ Read the Secret Message
 
 ```bash
 cat secret.txt
@@ -80,7 +81,7 @@ cat secret.txt
 
 ---
 
-## What I Learned
+## 📚 What I Learned
 
 - How to use `zip`, `zip2john`, and `john` together.
 - How hash extraction from ZIP files works.
@@ -89,13 +90,10 @@ cat secret.txt
 
 ---
 
-## Tools Used
+## 🛠️ Tools Used
 
 - Kali Linux  
 - John the Ripper  
 - RockYou wordlist  
 - zip2john  
 - unzip
-
----
-```
