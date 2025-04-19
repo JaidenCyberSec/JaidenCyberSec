@@ -15,7 +15,7 @@ Learn how to simulate post-exploitation on a Linux system by cracking a **SHA-51
 ### 🗜️ [Lab 2: Crack Encrypted ZIP File](./Lab2/README.md)  
 Crack the password of a **ZIP file** encrypted with `zip -e` using `zip2john` + **John the Ripper** with the `rockyou.txt` wordlist.
 
-### 🧪 [Lab 3: Custom User Shadow Attack - Kuzan](./lab3/README.md)  
+### 🧪 [Lab 3: Custom User Shadow Attack - Kuzan](./Lab3/README.md)  
 Crack a SHA-512 hash for a fake Linux user named **kuzan** using a custom lab setup. This simulates how an attacker would retrieve and crack hashes from `/etc/passwd` and `/etc/shadow`.
 
 ---
