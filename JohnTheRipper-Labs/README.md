@@ -18,6 +18,9 @@ Learn to crack the password of a **ZIP file** encrypted with `zip -e`. You’ll 
 ### 🧪 **[Lab 3: Custom User Shadow Attack - Kuzan](./Lab3/README.md)**  
 Simulate an attack on a fake Linux user named **kuzan**. You’ll retrieve and crack SHA-512 hashes from `/etc/passwd` and `/etc/shadow` to gain access.
 
+### 💥 **[Lab 4: Crack Raw MD5 Hash](./Lab4/README.md)**  
+This lab focuses on cracking an unsalted **MD5** hash. You’ll create the hash using `md5sum`, feed it into John the Ripper with the proper format, and recover the original password.
+
 ---
 
 ## 🛠️ **Tools Used**
@@ -29,6 +32,7 @@ Simulate an attack on a fake Linux user named **kuzan**. You’ll retrieve and c
 - **rockyou.txt** (wordlist)
 - **unshadow**
 - **unzip**
+- **md5sum**
 
 ---
 
