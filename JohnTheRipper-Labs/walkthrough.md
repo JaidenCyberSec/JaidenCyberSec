@@ -42,6 +42,18 @@ Each walkthrough breaks down the process step-by-step, helping you understand ho
 
 ---
 
+### ✅ Lab 4: Crack Unsalted MD5 Hash (hunter2)
+
+- Generated a raw MD5 hash using `echo -n "hunter2" | md5sum`
+- Saved the hash into a file named `md5hash.txt`
+- Ran John the Ripper with `--format=raw-md5` using `rockyou.txt`
+- Revealed password successfully using `john --show`
+
+> 🔓 **Outcome**: Cracked raw MD5 hash — the password was `hunter2`
+
+---
+
 Each walkthrough is beginner-friendly and designed to reinforce ethical hacking fundamentals and password auditing techniques.  
 
 More labs coming soon! 🧪
+
