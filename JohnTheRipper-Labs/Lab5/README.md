@@ -87,3 +87,11 @@ user:kingdom:c0e84e870874dd37ed0d164c7986f03a
 - Weak passwords like `kingdom` are easily cracked using public wordlists.
 - NTLM hashes are fast to compute and vulnerable to dictionary attacks.
 - Always use strong, unique, randomly generated passwords in practice.
+
+---
+🛡️ Disclaimer
+This lab was performed in a controlled and ethical environment for educational purposes only. Do not use these techniques on systems or data without proper authorization.
+
+©️ Copyright
+© 2025 Jaiden. All rights reserved.
+Unauthorized reproduction or distribution of this lab walkthrough is prohibited.
