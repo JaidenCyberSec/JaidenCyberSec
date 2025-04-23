@@ -53,7 +53,19 @@ Each walkthrough breaks down the process step-by-step, helping you understand ho
 
 ---
 
+### ✅ Lab 5: Crack NTLM Hash (john_ntlm:kingdom)
+
+- Created a valid NTLM hash using Python and UTF-16LE encoding
+- Saved the hash in the proper format for John the Ripper
+- Used `--format=nt` and the `rockyou.txt` wordlist to crack it
+- Verified the result using `john --show`
+
+> 🔓 **Outcome**: Cracked NTLM hash — the password was `kingdom`
+
+---
+
 Each walkthrough is beginner-friendly and designed to reinforce ethical hacking fundamentals and password auditing techniques.  
 
 More labs coming soon! 🧪
+
 
