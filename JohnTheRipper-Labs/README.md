@@ -21,6 +21,9 @@ Simulate an attack on a fake Linux user named **kuzan**. You’ll retrieve and c
 ### 💥 **[Lab 4: Crack Raw MD5 Hash](./Lab4/README.md)**  
 This lab focuses on cracking an unsalted **MD5** hash. You’ll create the hash using `md5sum`, feed it into John the Ripper with the proper format, and recover the original password.
 
+### 🧱 **[Lab 5: Crack NTLM Hash with John the Ripper](./Lab5/README.md)**  
+In this lab, you’ll generate and crack a Windows **NTLM hash** using `python3`, format it for John, and use `rockyou.txt` to crack the hash. This simulates a real-world post-exploitation scenario on a Windows machine.
+
 ---
 
 ## 🛠️ **Tools Used**
@@ -33,6 +36,7 @@ This lab focuses on cracking an unsalted **MD5** hash. You’ll create the hash 
 - **unshadow**
 - **unzip**
 - **md5sum**
+- **Python 3**
 
 ---
 
@@ -70,4 +74,3 @@ I’m deeply committed to mastering tools that are crucial for both **red team**
 
 © 2025 Jaiden Jimerson. All rights reserved.  
 This series and the content within it are for educational purposes only. Unauthorized use or reproduction of any materials in this series is prohibited without prior permission.
-
