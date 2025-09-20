@@ -85,6 +85,14 @@ OSINT Labs/
 * Linux file management and scripting proficiency.
 * Professional lab documentation suitable for GitHub portfolios.
 
+
+---
+
+© 2025 Jaiden Jimerson. All rights reserved.
+
+This repository and its contents, including scripts, documentation, and lab files, are the original work of Jaiden Jimerson.  
+Unauthorized copying, distribution, or commercial use without permission is prohibited.
+
 ---
 
 ## 🔗 Notes
