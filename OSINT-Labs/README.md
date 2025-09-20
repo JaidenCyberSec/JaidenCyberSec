@@ -97,15 +97,3 @@ OSINT Labs/
 
 ---
 
-✅ **Benefits of this structure:**
-- Gives a **professional overview** of all your OSINT work.  
-- Serves as a **hub** for recruiters to explore labs by tool.  
-- Standardizes workflow documentation for every lab.  
-- Easy to expand when you add new tools or labs.  
-
----
-
-If you want, I can **also create a template for each tool-specific folder README.md** (like TheHarvester, Shodan, Maltego) that links to each lab inside it. This makes the repo **fully navigable and professional**.  
-
-Do you want me to do that next?
-```
