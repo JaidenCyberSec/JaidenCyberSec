@@ -139,14 +139,6 @@ Lab1-Tesla-TheHarvester/
 
 ```
 
----
-
-✅ This README.md is **ready to paste** into your `Lab1-Tesla-TheHarvester` folder.  
-- It documents the **full workflow**.  
-- Links all scripts and outputs.  
-- Professional and GitHub-ready.  
-
----
 
 
 
