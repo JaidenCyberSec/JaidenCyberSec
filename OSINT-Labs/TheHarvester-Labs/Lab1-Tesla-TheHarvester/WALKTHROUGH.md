@@ -1,18 +1,20 @@
 
-
-````markdown
 # Walkthrough – Lab 1: Tesla – TheHarvester OSINT
 
-This walkthrough provides a **step-by-step guide** for performing OSINT collection using TheHarvester on Tesla.com. It includes commands, outputs, and explanations for each step.
+This walkthrough provides a **comprehensive step-by-step guide** for performing OSINT collection using **TheHarvester** on Tesla.com.  
+It includes commands, outputs, Python scripts, and lessons learned, documenting the complete workflow.
 
 ---
 
 ## 🔹 Step 1: Running TheHarvester
 
+We collected emails and subdomains from Tesla.com using multiple search engines directly into a **single JSON file**.
+
 **Command used:**
 
 ```bash
-theHarvester -d tesla.com -b google -f tesla_results.json
+theHarvester -d tesla.com -b google,bing,yahoo,brave -f tesla_results.json
+
 ````
 
 **Explanation:**
