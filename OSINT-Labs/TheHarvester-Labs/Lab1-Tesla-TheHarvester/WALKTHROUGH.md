@@ -144,11 +144,4 @@ plt.show()
 
 ```
 
----
-
-✅ This **walkthrough.md** complements your README.md:  
-- README.md = overview, objectives, files, folder structure  
-- walkthrough.md = **hands-on step-by-step execution**  
-
----
 
