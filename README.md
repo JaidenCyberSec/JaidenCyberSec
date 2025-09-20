@@ -47,7 +47,7 @@ Each lab or project folder contains:
 - 🧠 Lessons learned  
 
 ### Lab Folders
-- 📁 [OSINT Labs](./TheHarvester-Labs)  
+- 📁 [OSINT Labs]  
 - 📁 [Linux Fundamentals Labs](./Linux-Fundamentals)  
 - 🧗‍♂️ [Privilege Escalation Practice](./Privilege-Escalation)  
 - 🔓 [John The Ripper Labs](./JohnTheRipper-Labs)  
