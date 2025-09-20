@@ -113,7 +113,7 @@ plt.show()
 
 **Screenshot example:**
 
-![Network Graph Example](./tesla_network_graph.png)
+![Network Graph Example](./Tesla_network_graph.png)
 
 ---
 
