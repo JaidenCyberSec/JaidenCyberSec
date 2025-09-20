@@ -30,7 +30,7 @@ Each subfolder represents a **different OSINT tool**, with multiple labs demonst
 
 ## 📂 Folder Structure
 ```
-
+```
 OSINT Labs/
 ├── TheHarvester-Labs/
 │   ├── Lab1-Tesla/
@@ -43,7 +43,7 @@ OSINT Labs/
 ├── SpiderFoot-Labs/
 │   └── Lab1-\[Target]/
 └── README.md  <-- This file
-
+```
 ````
 
 ---
