@@ -9,7 +9,7 @@ Welcome! This is my hands-on cybersecurity portfolio 🧠 built through intensiv
 - 💻 Build real-world technical skills through labs and CTFs  
 - 🧠 Master Linux, network security, and penetration testing  
 - 📘 Document my journey to becoming a top-tier cybersecurity professional  
-- 🔍 Show potential employers my capabilities through practical projects  
+- 🔍 Showcase my capabilities to potential employers through practical projects  
 
 ---
 
@@ -19,14 +19,14 @@ Welcome! This is my hands-on cybersecurity portfolio 🧠 built through intensiv
 - 🐧 Operating Systems: Kali Linux, Ubuntu  
 - 🌐 Networking: TCP/IP, DNS, HTTP, Wireshark  
 - 🛠️ Offensive Tools: Nmap, Hydra, Gobuster, Burp Suite, John the Ripper  
-- 📜 Scripting: Bash  
+- 📜 Scripting: Bash, Python (JSON parsing, data automation, NetworkX visualization)  
 - 🧩 Platforms: TryHackMe, GitHub  
 
 ### 🧾 Certifications  
 - ✅ ITIL 4 Foundation  
 - ✅ TryHackMe: Linux Fundamentals, Network Security, Privilege Escalation  
 - 🎓 Pursuing B.S. in Cybersecurity & Information Assurance at WGU  
-- ⏳ More to be added as I progress!
+- ⏳ More to be added as I progress
 
 ---
 
@@ -34,25 +34,35 @@ Welcome! This is my hands-on cybersecurity portfolio 🧠 built through intensiv
 - 🐱 Kali Linux  
 - 🔍 Nmap, Hydra, Burp Suite, Gobuster  
 - 📡 Wireshark, John the Ripper  
-- 💬 Bash scripting  
+- 💬 Bash & Python scripting  
 - 🧩 TryHackMe labs  
 
 ---
 
-## 🚀 Featured Projects  
+## 🚀 Featured Projects & Labs  
+Each lab or project folder contains:  
+- 🎯 Lab objectives  
+- 🔧 Commands & scripts used  
+- 🖼️ Screenshots & visual outputs  
+- 🧠 Lessons learned  
+
+### Lab Folders
+- 📁 [Lab 1 – TheHarvester OSINT (Tesla)](./Lab1-TheHarvester-Tesla)  
 - 📁 [Linux Fundamentals Labs](./Linux-Fundamentals)  
 - 🧗‍♂️ [Privilege Escalation Practice](./Privilege-Escalation)  
 - 🔓 [John The Ripper Labs](./JohnTheRipper-Labs)  
 
-Each folder includes:  
-- 🎯 Lab objectives  
-- 🔧 Commands used  
-- 🖼️ Screenshots & walkthroughs  
-- 🧠 Lessons learned  
+---
+
+## 🌐 Connect With Me
+- 👔 LinkedIn: [Jaiden Jimerson](https://www.linkedin.com/in/jaiden-jimerson-319995140)  
+- 🐦 Twitter / X: [@JaidenCyberSec](https://x.com/JaidenCyberSec)  
 
 ---
 
-## 🌐 Connect With Me  
-- 👔 LinkedIn: [Jaiden Jimerson](https://www.linkedin.com/in/jaiden-jimerson-319995140)  
-- 🐦 Twitter / X: [@JaidenCyberSec](https://x.com/JaidenCyberSec)  
+## 📌 Notes
+- All labs are built and tested on **Kali Linux**  
+- Python and Bash scripts are **fully commented and reusable**  
+- This portfolio is **continuously updated** with new labs, CTF solutions, and OSINT projects
+
 
