@@ -142,6 +142,5 @@ plt.show()
 
 © 2025 Jaiden Jimerson. All rights reserved.
 
-```
 
 
