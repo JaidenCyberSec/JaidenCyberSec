@@ -117,8 +117,8 @@ plt.show()
 
 ## 🔹 Step 4: Lab Analysis
 
-* **Emails discovered:** [contact@tesla.com](mailto:contact@tesla.com), [support@tesla.com](mailto:support@tesla.com), etc.
-* **Subdomains discovered:** shop.tesla.com, careers.tesla.com, etc.
+* **Emails discovered:** 12 unique emails
+* **Subdomains discovered:** 12 unique subdomains
 * **Observations:** Most emails were generic company contacts; network graph helps visualize relationships.
 
 ---
