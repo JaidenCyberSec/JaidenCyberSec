@@ -88,11 +88,6 @@ OSINT Labs/
 
 ---
 
-© 2025 Jaiden Jimerson. All rights reserved.
-
-This repository and its contents, including scripts, documentation, and lab files, are the original work of Jaiden Jimerson.  
-Unauthorized copying, distribution, or commercial use without permission is prohibited.
-
 ---
 
 ## 🔗 Notes
@@ -100,4 +95,12 @@ Unauthorized copying, distribution, or commercial use without permission is proh
 * All labs are built and tested on **Kali Linux**.
 * This README should serve as the **entry point** to explore all OSINT work in this repository.
 * Update this file as new OSINT tools and labs are added.
+
+---
+
+© 2025 Jaiden Jimerson. All rights reserved.
+
+This repository and its contents, including scripts, documentation, and lab files, are the original work of Jaiden Jimerson.  
+Unauthorized copying, distribution, or commercial use without permission is prohibited.
+
 
