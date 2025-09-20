@@ -93,7 +93,3 @@ OSINT Labs/
 * This README should serve as the **entry point** to explore all OSINT work in this repository.
 * Update this file as new OSINT tools and labs are added.
 
-```
-
----
-
