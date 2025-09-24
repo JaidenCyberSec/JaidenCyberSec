@@ -46,22 +46,32 @@ theHarvester -d tesla.com -b google -f tesla_results.json
 
 Use Python to extract emails and subdomains from `tesla_results.json`:
 
-```python
-import json
+```import json
 import pandas as pd
 
-with open('tesla_results.json') as f:
+with open("tesla_results.json") as f:
     data = json.load(f)
 
-emails = data.get('emails', [])
-subdomains = data.get('subdomains', [])
+# Check if data is dict or list
+if isinstance(data, dict):
+    emails = data.get("emails", [])
+    subdomains = data.get("hosts", [])
+elif isinstance(data, list):
+    emails = data
+    subdomains = []
+else:
+    emails, subdomains = [], []
 
-df = pd.DataFrame({
-    'Emails': emails,
-    'Subdomains': subdomains
-})
+# Make sure lists are same length
+max_len = max(len(emails), len(subdomains))
+emails += [None]*(max_len - len(emails))
+subdomains += [None]*(max_len - len(subdomains))
 
-df.to_csv('tesla_harvester.csv', index=False)
+# Save to CSV
+df = pd.DataFrame({"Emails": emails, "Subdomains": subdomains})
+df.to_csv("tesla_harvester.csv", index=False)
+print(f"Saved {len(emails)} emails and {len(subdomains)} subdomains to tesla_harvester.csv")
+
 ```
 
 > Output: `tesla_harvester.csv` with all emails and subdomains.
