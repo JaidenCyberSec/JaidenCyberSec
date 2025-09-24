@@ -162,13 +162,6 @@ Lab1-Tesla-TheHarvester/
 
 ```
 
----
-
-I cleaned up the formatting, fixed the code block syntax, and polished the instructions. ✅  
-
-If you want, I can also **rewrite it as a “professional lab report” style** that looks perfect for GitHub or a portfolio. This would include a brief summary, results section, and lessons in a cleaner narrative style.  
-
-Do you want me to do that?
 ```
 
 
