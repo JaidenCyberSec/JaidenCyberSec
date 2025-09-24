@@ -38,7 +38,7 @@ theHarvester -d tesla.com -b google -f tesla_results.json
 * `-b google` → search engine
 * `-f tesla_results.json` → output file
 
-> You can repeat with other sources (Bing, Yahoo, etc.) for more comprehensive results.
+> Repeat with other sources (Bing, Yahoo, etc.) for more comprehensive results.
 
 ---
 
@@ -46,13 +46,15 @@ theHarvester -d tesla.com -b google -f tesla_results.json
 
 Use Python to extract emails and subdomains from `tesla_results.json`:
 
-```import json
+```python
+import json
 import pandas as pd
 
+# Load JSON data
 with open("tesla_results.json") as f:
     data = json.load(f)
 
-# Check if data is dict or list
+# Extract emails and subdomains
 if isinstance(data, dict):
     emails = data.get("emails", [])
     subdomains = data.get("hosts", [])
@@ -62,7 +64,7 @@ elif isinstance(data, list):
 else:
     emails, subdomains = [], []
 
-# Make sure lists are same length
+# Ensure lists are equal length
 max_len = max(len(emails), len(subdomains))
 emails += [None]*(max_len - len(emails))
 subdomains += [None]*(max_len - len(subdomains))
@@ -71,7 +73,6 @@ subdomains += [None]*(max_len - len(subdomains))
 df = pd.DataFrame({"Emails": emails, "Subdomains": subdomains})
 df.to_csv("tesla_harvester.csv", index=False)
 print(f"Saved {len(emails)} emails and {len(subdomains)} subdomains to tesla_harvester.csv")
-
 ```
 
 > Output: `tesla_harvester.csv` with all emails and subdomains.
@@ -82,7 +83,8 @@ print(f"Saved {len(emails)} emails and {len(subdomains)} subdomains to tesla_har
 
 Visualize relationships between emails and subdomains using Python:
 
-``import pandas as pd
+```python
+import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
@@ -101,14 +103,14 @@ for email in emails:
 for sub in subs:
     G.add_node(sub, type='subdomain')
 
-# Connect every email to every subdomain
+# Connect each email to each subdomain
 for email in emails:
     for sub in subs:
         G.add_edge(email, sub)
 
 # Draw graph
 plt.figure(figsize=(14,10))
-pos = nx.spring_layout(G, k=0.5)  # Better spacing
+pos = nx.spring_layout(G, k=0.5)
 nx.draw(
     G, pos, with_labels=True, 
     node_size=800, 
@@ -119,7 +121,6 @@ nx.draw(
 plt.title("Tesla OSINT: Email ↔ Subdomain Network", fontsize=14)
 plt.savefig("tesla_network_graph.png", dpi=300)
 plt.show()
-
 ```
 
 > Output: `tesla_network_graph.png` showing connections between emails and subdomains.
@@ -142,7 +143,7 @@ Lab1-Tesla-TheHarvester/
 
 ## 🧠 Lessons Learned
 
-* Mastered **TheHarvester** for multiple search engines.
+* Mastered **TheHarvester** across multiple search engines.
 * Learned **JSON → CSV parsing** in Python for OSINT automation.
 * Created **network visualizations** to map relationships between emails and subdomains.
 * Practiced **professional lab documentation** for GitHub portfolios.
@@ -152,12 +153,23 @@ Lab1-Tesla-TheHarvester/
 ## 📌 Notes
 
 * All scripts are **commented and reusable**.
-* Ensure to run the lab in **Kali Linux** for best compatibility.
+* Run the lab in **Kali Linux** for best compatibility.
 * This lab is **ethical and educational**, using only publicly available information.
 
 ---
 
 © 2025 Jaiden Jimerson. All rights reserved.
+
+```
+
+---
+
+I cleaned up the formatting, fixed the code block syntax, and polished the instructions. ✅  
+
+If you want, I can also **rewrite it as a “professional lab report” style** that looks perfect for GitHub or a portfolio. This would include a brief summary, results section, and lessons in a cleaner narrative style.  
+
+Do you want me to do that?
+```
 
 
 
