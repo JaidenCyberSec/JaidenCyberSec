@@ -90,30 +90,42 @@ python3 tesla_network_graph.py
 
 **Inside tesla\_network\_graph.py:**
 
-```python
-import pandas as pd
+```import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('tesla_harvester.csv')
+# Load CSV
+df = pd.read_csv("tesla_harvester.csv")
 
+emails = df['Emails'].dropna().tolist()
+subs = df['Subdomains'].dropna().tolist()
+
+# Create graph
 G = nx.Graph()
 
 # Add nodes
-for email in df['Emails']:
+for email in emails:
     G.add_node(email, type='email')
+for sub in subs:
+    G.add_node(sub, type='subdomain')
 
-for subdomain in df['Subdomains']:
-    G.add_node(subdomain, type='subdomain')
+# Connect each email to each subdomain
+for email in emails:
+    for sub in subs:
+        G.add_edge(email, sub)
 
-# Connect emails to subdomains
-for email in df['Emails']:
-    for subdomain in df['Subdomains']:
-        G.add_edge(email, subdomain)
-
-plt.figure(figsize=(12,12))
-nx.draw(G, with_labels=True, node_size=2000, node_color='skyblue', font_size=10)
-plt.savefig('tesla_network_graph.png')
+# Draw graph
+plt.figure(figsize=(14,10))
+pos = nx.spring_layout(G, k=0.5)
+nx.draw(
+    G, pos, with_labels=True, 
+    node_size=800, 
+    node_color='lightblue', 
+    font_size=8, 
+    edge_color="gray"
+)
+plt.title("Tesla OSINT: Email ↔ Subdomain Network", fontsize=14)
+plt.savefig("tesla_network_graph.png", dpi=300)
 plt.show()
 ```
 
